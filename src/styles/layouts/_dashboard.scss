@@ -1,0 +1,18 @@
+.header-content{
+    margin-bottom: 10px;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    
+}
+.content-dashboard{
+    margin: 0 20px;
+    width: 97%;
+    padding: 30px;
+    background-color: white;
+    .top-content{
+        display: flex;
+        justify-content: space-between;
+    }
+}

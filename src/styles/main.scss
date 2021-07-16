@@ -1,0 +1,22 @@
+@import "./helpers/reset";
+@import "./helpers/variable";
+@import "./layouts/dashboard";
+
+
+
+@import "./layouts/login";
+.test{
+ text-align: center;
+ background-color: black;
+ height: 100vh;
+ color: white;
+}
+.page-not-found{
+  background-color: white;
+  img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+  }
+}

@@ -1,0 +1,276 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../../fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../../fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+/*//////////////////////////////////////////////////////////////////
+  [ login ]*/
+
+.login-wolves {
+  width: 100%;
+  margin: 0 auto;
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #9053c7;
+    background: -webkit-linear-gradient(90deg, #48c6ef -0.07%, #6f86d6 99.87%);
+    background: -o-linear-gradient(90deg, #48c6ef -0.07%, #6f86d6 99.87%);
+    background: -moz-linear-gradient(90deg, #48c6ef -0.07%, #6f86d6 99.87%);
+    background: linear-gradient(90deg, #48c6ef -0.07%, #6f86d6 99.87%);
+
+    .wrapper {
+      width: 960px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 525px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 125px 130px 33px 95px;
+
+      .logo-wolves {
+        width: 316px;
+        img {
+          max-width: 100%;
+          margin-top: -30px;
+        }
+      }
+
+      .login-form {
+        width: 290px;
+        font-family: Poppins-Regular;
+
+        .login-form-title {
+          font-family: Poppins-Bold;
+          font-size: 24px;
+          background: linear-gradient(90deg, #48c6ef -0.07%, #6f86d6 99.87%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          line-height: 1.2;
+          text-align: center;
+
+          width: 100%;
+          display: block;
+          padding-bottom: 45px;
+        }
+
+        .wrap-input {
+          position: relative;
+          width: 100%;
+          z-index: 1;
+          margin-bottom: 10px;
+          .input {
+            font-family: Poppins-Medium;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #666666;
+
+            display: block;
+            width: 100%;
+            background: #e6e6e6;
+            height: 50px;
+            border-radius: 25px;
+            padding: 0 30px 0 68px;
+
+            &:focus + .focus-input {
+              -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+              animation: anim-shadow 0.5s ease-in-out forwards;
+            }
+
+            &:focus + .focus-input + .symbol-input {
+              color: #b4adff;
+              padding-left: 28px;
+            }
+          }
+          .focus-input {
+            display: block;
+            position: absolute;
+            border-radius: 25px;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 0px 0px;
+            color: #b4adff;
+          }
+          .symbol-input {
+            font-size: 15px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            border-radius: 25px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-left: 35px;
+            pointer-events: none;
+            color: #666666;
+
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+          }
+        }
+
+        .container-login-form-btn {
+          margin: 0 auto;
+          width: 80%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding-top: 10px;
+
+          .login-form-btn {
+            font-family: Montserrat-Bold;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #fff;
+            text-transform: uppercase;
+
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            background: linear-gradient(#48c6ef 0%, #6f86d6 60%);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 25px;
+
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.5s;
+            &:hover{
+              background: linear-gradient(#48c6ef 0%, #6f86d6 100%);
+            }
+          }
+        }
+
+        .wrap-login-form-forgot {
+          padding: 12px 0 160px;
+          text-align: center;
+          font-size: 1rem;
+          line-height: 1.5;
+          span {
+            font-size: 13px;
+            color: #999999;
+          }
+          .forgot-text {
+            font-size: 13px;
+            color: #666666;
+            &:hover {
+              color: #57b846;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+/*------------------------------------------------------------------
+  [ Responsive ]*/
+
+@media (max-width: 992px) {
+  .login-wolves {
+    .container {
+      .wrapper {
+        padding: 177px 90px 33px 85px;
+        .logo-wolves {
+          width: 35%;
+        }
+        .login-form {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .login-wolves {
+    .container {
+      .wrapper {
+        padding: 100px 80px 33px 80px;
+        .logo-wolves {
+          display: none;
+        }
+        .login-form {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .login-wolves {
+    .container {
+      .wrapper {
+        padding: 100px 15px 33px 15px;
+      }
+    }
+  }
+}
