@@ -1,8 +1,10 @@
 import React from 'react';
-import { Button, Row, Col, Form, Input } from "antd";
+import { Button, Row, Col, Form, Input, Radio } from "antd";
+import { DownloadOutlined } from '@ant-design/icons';
 
 interface IFilterProps {
     onFilterChange:(value:string)=>void;
+    cource:any;
 }
 const ColProps = {
     xs: 24,
@@ -45,6 +47,12 @@ const Filter: React.FC<IFilterProps> = (props) => {
                                     />
                                 </Form.Item>
                             </Col>
+                            <Col xl={{ span: 6 }} md={{ span: 6 }} sm={{ span: 12 }} xs={{ span: 12 }}>
+                                <Button href={`https://www.attendancev2.somee.com/Export/Excel?Id=${props.cource.idCource}`} type="primary" icon={<DownloadOutlined />} >
+                                    Download
+                                </Button>
+                            </Col>
+                            
                         </Row>
                     </Col>
                 </Row>

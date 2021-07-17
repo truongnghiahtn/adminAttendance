@@ -35,6 +35,7 @@ const Request: React.FunctionComponent<IRequestProps> = (props) => {
   }, [valueParam]);
 
   const filterProps = {
+    cource:valueParam,
     onFilterChange: (value: string) => {
       setValueParam(pre => ({
         ...pre, Keyword: value,PageIndex: 1
