@@ -5,7 +5,7 @@ import moment from 'moment';
 
 const FormItem = Form.Item;
 const { Option } = Select;
-const dateFormat = 'DD-MM-YYYY';
+const dateFormat = 'YYYY-MM-DD';
 const formItemLayout = {
     labelCol: {
         span: 6,
@@ -56,6 +56,7 @@ const ModalCourse: React.FC<IModalProps> = (props) => {
             })
             setNameTeacher(dataTeacher.key);
             setNameSubject(dataSubject.key);
+            console.log(item.dateBegin);
             setdateValue(item.dateBegin);
         }
         else{

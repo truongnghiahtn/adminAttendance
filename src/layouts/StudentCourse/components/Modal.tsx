@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Input, Modal, Button, List } from "antd";
 import Moment from 'react-moment';
 
-const dateFormat = 'DD-MM-YYYY';
+const dateFormat = 'YYYY-MM-DD';
 const formItemLayout = {
     labelCol: {
         span: 6,

@@ -11,7 +11,7 @@ import Moment from 'react-moment';
 import { NavLink } from "react-router-dom";
 
 const { confirm } = Modal;
-const dateFormat = 'DD-MM-YYYY';
+const dateFormat = 'YYYY-MM-DD';
 interface IListProps {
   loading: boolean;
   pagination: any;

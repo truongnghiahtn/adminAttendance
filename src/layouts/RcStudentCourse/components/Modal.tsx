@@ -4,7 +4,7 @@ import { Form, Input, Modal, Button, Select } from "antd";
 
 const FormItem = Form.Item;
 const { Option } = Select;
-const dateFormat = 'DD-MM-YYYY';
+const dateFormat = 'YYYY-MM-DD';
 const formItemLayout = {
     labelCol: {
         span: 6,

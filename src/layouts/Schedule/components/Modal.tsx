@@ -5,7 +5,7 @@ import moment from 'moment';
 
 
 const FormItem = Form.Item;
-const dateFormat = 'DD-MM-YYYY';
+const dateFormat = 'YYYY-MM-DD';
 const { Option } = Select;
 const formItemLayout = {
     labelCol: {

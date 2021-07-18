@@ -35,7 +35,7 @@ const List: React.FC<IListProps> = (props) => {
       key: "date",
       width: "20%",
       render:(record=>{
-      return <Moment format="DD-MM-YYYY">
+      return <Moment format="YYYY-MM-DD">
       {record.date}
     </Moment>
       })
