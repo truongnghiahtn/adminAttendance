@@ -62,7 +62,7 @@ const Request: React.FunctionComponent<IRequestProps> = (props) => {
     visible: modalVisible,
     updateCustom:update,
     destroyOnClose: true,
-    title:update===false? "Tạo phòng học":"Cập nhật phòng học",
+    title:update===false? "Tạo môn học":"Cập nhật môn học",
     centered: true,
     loading: props.subject.isActing || props.subject.isRefreshing,
     onOk: (data: any) => {
@@ -112,9 +112,9 @@ const Request: React.FunctionComponent<IRequestProps> = (props) => {
           <Breadcrumb.Item>
             <NavLink to={"/"}>Trang chủ</NavLink>
           </Breadcrumb.Item>
-          <Breadcrumb.Item>Phòng học</Breadcrumb.Item>
+          <Breadcrumb.Item>Môn học</Breadcrumb.Item>
         </Breadcrumb>
-        <h2 style={{ marginTop: "13px" }}> Trang phòng học</h2>
+        <h2 style={{ marginTop: "13px" }}> Trang môn học</h2>
       </div>
       <div style={{ width: "100%", height: "10px" }}></div>
       <div style={{ margin: "10px 20px" }}></div>

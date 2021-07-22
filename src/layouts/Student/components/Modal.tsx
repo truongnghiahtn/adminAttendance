@@ -32,6 +32,7 @@ const ModalCourse: React.FC<IModalProps> = (props) => {
                 var data = {
                     userName: values.user,
                     fullName: values.fullName,
+                    firstName:values.firstName,
                     password: values.pass,
                     email: values.email
                 };
@@ -61,6 +62,10 @@ const ModalCourse: React.FC<IModalProps> = (props) => {
                 formData.append(
                     "fullName",
                     values.fullName,
+                );
+                formData.append(
+                    "firstName",
+                    values.firstName,
                 );
                 formData.append(
                     "Id_User",
@@ -111,9 +116,18 @@ const ModalCourse: React.FC<IModalProps> = (props) => {
                 layout="horizontal"
             >
                 <FormItem
-                    name="fullName"
+                    name="firstName"
                     rules={[{ required: true, message: "Nhập tên học viên!" }]}
                     label="Tên học viên"
+                    hasFeedback
+                    {...formItemLayout}
+                >
+                    <Input />
+                </FormItem>
+                <FormItem
+                    name="fullName"
+                    rules={[{ required: true, message: "Nhập họ tên học viên!" }]}
+                    label="Họ tên học viên"
                     hasFeedback
                     {...formItemLayout}
                 >

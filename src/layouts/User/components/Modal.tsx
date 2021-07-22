@@ -72,9 +72,18 @@ const ModalCourse: React.FC<IModalProps> = (props) => {
                 layout="horizontal"
             >
                 <FormItem
+                    name="firstName"
+                    rules={[{ required: true, message: "Nhập tên quản trị!" }]}
+                    label="Tên"
+                    hasFeedback
+                    {...formItemLayout}
+                >
+                    <Input />
+                </FormItem>
+                <FormItem
                     name="fullName"
-                    rules={[{ required: true, message: "Nhập tên học viên!" }]}
-                    label="Tên quản trị"
+                    rules={[{ required: true, message: "Nhập họ tên quản trị!" }]}
+                    label="Họ tên"
                     hasFeedback
                     {...formItemLayout}
                 >

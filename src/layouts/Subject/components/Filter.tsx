@@ -37,7 +37,7 @@ const onAdd=()=>{
             <Form name="control-ref">
                 <Row gutter={24} justify="space-between">
                     <Col {...ColProps} xl={{ span: 12 }} md={{ span: 8 }}>
-                        <h2>Phòng học</h2>
+                        <h2>Môn học</h2>
                     </Col>
                     <Col xl={{ span: 12 }} md={{ span: 12 }}>
                         <Row gutter={24} justify="end">

@@ -36,6 +36,7 @@ const refreshState = (dispatch, payload: any) => {
                     index: index + 1,
                     key: item.id,
                     fullName: item.fullName,
+                    firstName:item.name,
                     email: item.email,
                     urlImg:item.urlImg!=null?item.urlImg:"N/A"
                 };
@@ -67,6 +68,7 @@ const createActionGetStudent = (type: string) => {
                         index: index + 1,
                         key: item.id,
                         fullName: item.fullName,
+                        firstName:item.name,
                         email: item.email,
                         urlImg:item.urlImg!=null?item.urlImg:"N/A"
                     };
